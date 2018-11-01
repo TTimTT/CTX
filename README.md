@@ -33,7 +33,9 @@ user has or wants to use.
 - Cleaning Phase with pyspark: Keeping only titles and ingredients list
 - Saving the cleaned DataFrame as Pandas df
 - Classification of the recipes by food ingredient, recipe type/culture or health benefits
-- TODO
+- A tag (<chocolate>) is assigned for each ingredient, one recipe has 
+multiple tags (like in HW3). Similar ingredients are assigned the same 
+tags
 
 # Questions for TAa
 Add here some questions you have for us, in general or project-specific.
