@@ -28,7 +28,11 @@ We can propose different level of ingredient similarity, depending on how many i
 user has or wants to use.
 
 # A list of internal milestones up until project milestone 2
-Add here a sketch of your planning for the next project milestone.
+- Loading the HTML files with BeautifulSoup into pyspark
+- Cleaning Phase with pyspark: Keeping only titles and ingredients list
+- Saving the cleaned DataFrame as Pandas df
+- Classification of the recipes by food ingredient, recipe type/culture or health benefits
+- TODO
 
 # Questions for TAa
 Add here some questions you have for us, in general or project-specific.
