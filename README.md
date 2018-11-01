@@ -1,13 +1,31 @@
 # Title
 
 # Abstract
-A 150 word description of the project idea, goals, dataset used. What story you would like to tell and why? What's the motivation behind your project?
+Would you use a tool that proposes a recipe by giving the food left in your fridge?
+This project makes use of the "cooking recipes"(#TODO link daataset) dataset to
+offer different recipes while using the list of ingredients given by the user.
+Our aim is to provide a service that helps people to waste less food, improve
+their health and introduce them to different types of recipes.
 
 # Research questions
-A list of research questions you would like to address during the project. 
+1) Can people waste less food with the right tools?
+2) Can people improve their health with good recipes?
+3) Helps people to cook more
 
 # Dataset
-List the dataset(s) you want to use, and some ideas on how do you expect to get, manage, process and enrich it/them. Show us you've read the docs and some examples, and you've a clear idea on what to expect. Discuss data size and format if relevant.
+"Cooking recipes" dataset.
+How to get the data:
+First, get only the pages containing recipes while ignoring miscellaneous pages.
+Parsing HTML files with BeautifulSoup library and seeking "ingredients" related class or tags in the files with regex.
+Since the dataset is quite big (~2.5 Gb), the first part would be done in pyspark
+but after fetching the recipes which represent a small part of HTML files we can
+easily use Pandas DataFrame for the implementation of our project.
+The data cleaning would be done in spark, then we save these data into a Pandas'
+DataFrame file, thus to process it later.
+A second dataset, which correspond to the user ingredient, is use as a criteria
+to seek the matching recipes by relational link with foods.
+We can propose different level of ingredient similarity, depending on how many ingredients the
+user has or wants to use.
 
 # A list of internal milestones up until project milestone 2
 Add here a sketch of your planning for the next project milestone.
