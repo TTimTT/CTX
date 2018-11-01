@@ -11,6 +11,7 @@ their health and introduce them to different types of recipes.
 1) Can people waste less food with the right tools?
 2) Can people improve their health with good recipes?
 3) Helps people to cook more
+4) Distribution of recipe in different culture?
 
 # Dataset
 "Cooking recipes" dataset.
