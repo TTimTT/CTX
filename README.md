@@ -1,5 +1,5 @@
 # Title
-
+Captain Cook
 # Abstract
 Would you use a tool that proposes a recipe by giving the food left in your fridge?
 This project makes use of the "cooking recipes"(#TODO link daataset) dataset to
