@@ -12,6 +12,9 @@ their health and introduce them to different types of recipes.
 2) Can people improve their health with good recipes?
 3) Helps people to cook more
 4) Distribution of recipe in different culture?
+5) How/Can we replace a Country favorite ingredient by another similar 
+one? 
+(todo: culture mixing)
 
 # Dataset
 "Cooking recipes" dataset.
