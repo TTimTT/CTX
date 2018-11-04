@@ -1,21 +1,22 @@
 # Title
 Captain Cook
 # Abstract
-Would you use a tool that proposes a recipe by giving the food left in your fridge?
-This project makes use of the "cooking recipes"(#TODO link daataset) dataset to
-offer different recipes while using the list of ingredients given by the user.
+Would you use a tool that proposes a recipe that you would really like, given
+the list of ingredients in your fridge?
+This project makes use of the [**Cooking recipes**](http://infolab.stanford.edu/~west1/from-cookies-to-cooks/recipePages.zip) dataset to offer different recipes while using the list of ingredients given by the user.
 Our aim is to provide a service that helps people to waste less food, improve
 their health and introduce them to different types of recipes.
 
 # Research questions
-1) Can people waste less food with the right tools?
-2) Can people improve their health with good recipes?
-3) Which culture has the most famous recipe?
-4) How/Can we replace a famous' recipe ingredient by another similar 
+1) Which culture has the most famous recipe?
+2) What is the distribution of ingredients for each culture?
+---> check TODO
+3) How/Can we replace a famous recipe's ingredient by another similar 
 one?/ Replace a famous recipe by another recipe?
-5) Distribution of recipe in different culture?
+4) Can we find an equivalent recipe with less calories?
+---->
+5) Can people waste less food with the right tools?
 
-(todo: culture mixing)
 
 # Dataset
 "Cooking recipes" dataset.
