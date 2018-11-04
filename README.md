@@ -21,7 +21,7 @@ one?/ Replace a famous recipe by another recipe?
 **Dataset**: [**Cooking recipes**](http://infolab.stanford.edu/~west1/from-cookies-to-cooks/recipePages.zip)  
 **How to get the data**:  
 First, we get only the pages containing recipes while ignoring miscellaneous pages.  
-Parsing HTML files with ```*BeautifulSoup*``` library and seeking ```<ingredients>``` related class or tags in the files with regex and also for the ```<ratings>``` and ```<calories>```.  
+Parsing HTML files with *BeautifulSoup* library and seeking ```<ingredients>``` related class or tags in the files with regex and also for the ```<ratings>``` and ```<calories>```.  
 **Processing**: Since the dataset is quite big (~2.5 Gb), the first part would be done in *PySpark*
 but after fetching the recipes which represent a small part of HTML files we can
 easily use *Pandas* DataFrame for the implementation of our project.  
