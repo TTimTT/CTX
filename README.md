@@ -10,10 +10,11 @@ their health and introduce them to different types of recipes.
 # Research questions
 1) Can people waste less food with the right tools?
 2) Can people improve their health with good recipes?
-3) Helps people to cook more
-4) Distribution of recipe in different culture?
-5) How/Can we replace a Country favorite ingredient by another similar 
-one? 
+3) Which culture has the most famous recipe?
+4) How/Can we replace a famous' recipe ingredient by another similar 
+one?/ Replace a famous recipe by another recipe?
+5) Distribution of recipe in different culture?
+
 (todo: culture mixing)
 
 # Dataset
