@@ -17,7 +17,6 @@ one?/ Replace a famous recipe by another recipe?
 ---->
 5) Can people waste less food with the right tools?
 
-
 # Dataset
 **Dataset**: [**Cooking recipes**](http://infolab.stanford.edu/~west1/from-cookies-to-cooks/recipePages.zip)  
 **How to get the data**:  
