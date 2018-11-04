@@ -2,8 +2,8 @@
 Captain Cook
 # Abstract
 Would you use a tool that proposes a recipe that you would really like, given
-the list of ingredients in your fridge?
-This project makes use of the [**Cooking recipes**](http://infolab.stanford.edu/~west1/from-cookies-to-cooks/recipePages.zip) dataset to offer different recipes while using the list of ingredients given by the user.
+the list of ingredients in your fridge?  
+This project makes use of the [**Cooking recipes**](http://infolab.stanford.edu/~west1/from-cookies-to-cooks/recipePages.zip) dataset to offer different recipes while using the list of ingredients given by the user.  
 Our aim is to provide a service that helps people to waste less food, improve
 their health and introduce them to different types of recipes.
 
