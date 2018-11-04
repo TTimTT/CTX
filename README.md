@@ -10,12 +10,9 @@ their health and introduce them to different types of recipes.
 # Research questions
 1) Which culture has the most famous recipe?
 2) What is the distribution of ingredients for each culture?
----> check TODO
-3) How/Can we replace a famous recipe's ingredient by another similar 
+3) ~How/Can we replace a famous recipe's ingredient by another similar 
 one?/ Replace a famous recipe by another recipe?
 4) Can we find an equivalent recipe with less calories?
----->
-5) Can people waste less food with the right tools?
 
 # Dataset
 **Dataset**: [**Cooking recipes**](http://infolab.stanford.edu/~west1/from-cookies-to-cooks/recipePages.zip)  
@@ -38,6 +35,13 @@ user has or wants to use.
 - A tag (e.g ```<chocolate>```) is assigned for each ingredient, one recipe has 
 multiple tags (like in HW3). Similar ingredients are assigned the same 
 tags
+- Get which culture has the most famous recipes
+- Get the distribution of most used ingredients
+- Finding equivalent recipes with less calories
 
-# Questions for TAa
-Add here some questions you have for us, in general or project-specific.
+# Questions for TA
+- We hesitate about the **research questions 3)**: we aren't sure of how difficult
+it would be to implement such a comparaison between ingredients/recipes, as it
+would need for us to take into account many different variables
+(e.g we can replace eggs with bananas only for desserts), shall we try it anyways?
+
