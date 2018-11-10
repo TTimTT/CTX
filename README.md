@@ -1,5 +1,5 @@
 # Title
-**Captain Cook: recipes exploration**
+### *Captain Cook: the fabulous recipes explorator*
 # Abstract
 Would you use a tool that proposes a recipe that you would really like, given
 the list of ingredients in your fridge?  
