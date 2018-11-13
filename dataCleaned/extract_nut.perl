@@ -7,7 +7,7 @@
 use Digest::MD5 qw(md5 md5_hex md5_base64);
 
 $PATH = ".";
-$RECIPE_PAGES_PATH = "$PATH/recipePages";
+$RECIPE_PAGES_PATH = "$PATH/recipePages/";
 $RECIPE_LIST_FILE = "$PATH/weight_uniqueRecipeUrls.tsv";
 
 sub readFile {
@@ -29,7 +29,7 @@ sub printOutput {
 	my $chol = shift;
 	my $hash = shift;
 	my $url = shift;
-	print "$kcal,$carb,$fat,$prot,$sodium,$chol\n";
+	print "$url,$kcal,$carb,$fat,$prot,$sodium,$chol\n";
 }
 
 sub computeDomain {
@@ -107,7 +107,8 @@ my $count = 0;
 # - means file not found or without valid HTML content
 # ? means no match in file
 foreach my $url (keys %md5) {
-	my $html = readFile("$url");
+	my $file = join "", $RECIPE_PAGES_PATH, $url, ".html";
+	my $html = readFile("$file");
 	my $head = ($html =~ /\A(.*?)$/ms)[0];
 	my $domain = $head;
 	++$count;
