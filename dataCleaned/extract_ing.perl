@@ -51,7 +51,7 @@ sub printOutput {
 	$ingredientString =~ s/\|+/\|/g;
 	$ingredientString =~ s/^\|//g;
 	$ingredientString =~ s/\|$//g;
-	print "$url, $title, $ingredientString\n";
+	print "$url\t$title\t$ingredientString\n";
 }
 
 my @md5 = ();

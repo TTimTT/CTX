@@ -29,7 +29,7 @@ sub printOutput {
 	my $chol = shift;
 	my $hash = shift;
 	my $url = shift;
-	print "$url,$kcal,$carb,$fat,$prot,$sodium,$chol\n";
+	print "$url\t$kcal\t$carb\t$fat\t$prot\t$sodium\t$chol\n";
 }
 
 sub computeDomain {
@@ -50,28 +50,28 @@ sub carbToKcal {
 	my $quant = shift;
 	my $unit = shift;	# must be 'g' or 'mg'
 	my $factor = $unit eq 'mg' ? 0.001 : 1;
-	return 4 * normalizeNumber($quant) * $factor;
+	return normalizeNumber($quant);# * 4 * $factor;
 }
 
 sub fatToKcal {
 	my $quant = shift;
 	my $unit = shift;	# must be 'g' or 'mg'
 	my $factor = $unit eq 'mg' ? 0.001 : 1;
-	return 9 * normalizeNumber($quant) * $factor;
+	return normalizeNumber($quant);# * 9 * $factor;
 }
 
 sub protToKcal {
 	my $quant = shift;
 	my $unit = shift;	# must be 'g' or 'mg'
 	my $factor = $unit eq 'mg' ? 0.001 : 1;
-	return 4 * normalizeNumber($quant) * $factor;
+	return normalizeNumber($quant);# * 4 * $factor;
 }
 	
 sub toMg {
 	my $quant = shift;
 	my $unit = shift;	# must be 'g' or 'mg'
 	my $factor = $unit eq 'mg' ? 1 : 1000;
-	return normalizeNumber($quant) * $factor;
+	return normalizeNumber($quant);# * $factor;
 }
 	
 my @md5 = ();
