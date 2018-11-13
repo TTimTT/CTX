@@ -67,19 +67,19 @@ while(my $url = <REC>) {
 close(REC);
 
 my %goodDomains = (
-	"allrecipes.com" => 1,
-	"food.com" => 1,
+	"allrecipes.com" => 1, #
+	"food.com" => 1, # the domain has been renamed
 	"yummly.com" => 1,
 	"myrecipes.com" => 1,
 	"recipes.sparkpeople.com" => 1,
-	"bettycrocker.com" => 1,
+	"bettycrocker.com" => 1, #
 	"foodnetwork.com" => 1,
 	"cdkitchen.com" => 1,
-	"eatingwell.com" => 1,
+	"eatingwell.com" => 1, #
 	"delish.com" => 1,
 	"cookeatshare.com" => 1,
 	"recipe.com" => 1,
-	"kraftrecipes.com" => 1,
+	"kraftrecipes.com" => 1,#
 	"epicurious.com" => 1
 	);
 
