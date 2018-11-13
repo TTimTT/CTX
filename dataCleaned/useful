@@ -1,0 +1,3 @@
+sed s/,/\\n/g test | grep "Title" | sed 's/{"ContentTitle":"//g' | sed 's/\("\|\[\)//g'
+
+for line in $(cat betty_italian); do grep  "$line" cleaned_ing.csv; done
