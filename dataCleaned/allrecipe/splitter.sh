@@ -25,7 +25,7 @@ do
 			"$url"
 
 		#################################### napping
-		sleep 10
+		sleep 5
 		#################################### Parsing
 		# Main info -> inggredients
 		hash=$(md5sum $TMP_FILE | sed "s/  $TMP_FILE.*//")
