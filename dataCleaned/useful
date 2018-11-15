@@ -1,8 +1,0 @@
-sed s/,/\\n/g test | grep "Title" | sed 's/{"ContentTitle":"//g' | sed 's/\("\|\[\)//g'
-
-for line in $(cat betty_italian); do grep  "$line" cleaned_ing.csv; done
-
-wget -r --reject-regex "index.html" -x http://www.eatingwell.com/recipes/17979/cuisines-regions/ --accept-regex ".*/cuisines-regions/" -x --wait=10 --random-wait
-
-wget -r --reject-regex "index.html" -x https://www.allrecipes.com/recipes/86/world-cuisine/ --accept-regex ".*/cuisines-regions/" -x --wait=10 --random-wait
-
