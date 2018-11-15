@@ -3,6 +3,7 @@
 for i in $(eval echo {1..$2})
 do
  TARGET="${1/$'\r'/}$i"
+ echo $TARGET
  wget \
 	--wait=10 \
 	--random-wait \
@@ -17,7 +18,8 @@ do
 	--accept=html \
 	--header="Accept: text/html" \
 	--ignore-tags=img,link,script \
-	$TARGET
+	$TARGET || break
+  sleep 5
 done
 
 #--reject-regex="/*index\.html\.*/" \
