@@ -3,6 +3,7 @@
 STARTING=$PWD
 TMP_FILE="tmp.html"
 DATA_FILE="data.csv"
+DESC_FILE="desc.csv"
 URL_LISTS="urls.txt"
 
 for directory in $(find $STARTING -type d); 
@@ -24,8 +25,6 @@ do
 			--output-document="$TMP_FILE" \
 			"$url"
 
-		#################################### napping
-		sleep 5
 		#################################### Parsing
 		# Main info -> inggredients
 		hash=$(md5sum $TMP_FILE | sed "s/  $TMP_FILE.*//")
@@ -102,8 +101,14 @@ do
 				sod=$(echo $val*1000 | bc)
 			fi
 		fi
+		######################################### Get Directives
+		reg="<span class=\"recipe-directions__list--item\">"
+		desc=$(cat "$TMP_FILE" | grep "$reg" | sed "s/$reg//" | tr "\n" " " | tr -s " ")
 		######################################### Printout
 		echo -e "$hash\t${PWD##*/}\t$title\t$ing\t$cal\t$carb\t$fat\t$prot\t$sod\t$chol" >> "$DATA_FILE"
+		echo -e "$hash£$desc" >> $DESC_FILE
+		#################################### napping
+		sleep 5
 	######################################### end for URLS
 	done 
 	######################################### Cleaning??
