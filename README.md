@@ -40,7 +40,7 @@ tags
 - Finding equivalent recipes with less calories
 
 # List of internal milestones achieved/missing for milestone 2
-- Loading HTML was done with ```PERL``` and ```BASH``` scrits
+- Loading HTML was done with ```PERL``` and ```BASH``` scripts
 - Data was cleaned with BASH and then with Pandas since it was small enough, we didn't
 retrieve ratings but we have the cooking time!
 - We classified the recipes by nutritional, time or region. We just need to do it by ingredient
