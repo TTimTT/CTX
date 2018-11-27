@@ -9,10 +9,10 @@ import os
 ing_list = pd.read_csv('ing_list.csv')
 
 cleaned_list = list()
-for i in range(len(ing_list)):
+for i in range(1051,len(ing_list)):
     print('############################################')
     print('\033[1m' + ing_list.iloc[i,1], '\033[0m\n')
-    os.system('grep -m1 --color "'+ing_list.iloc[i,1]+'" ./data/allrecipes_desc.csv ')
+    os.system('grep -m1 --color " '+ing_list.iloc[i,1]+' " ./data/allrecipes_desc.csv ')
 
     print('Is this an ingredient?\n (Yes=[Enter] | No=[Space]')
     x = input()
@@ -42,8 +42,25 @@ for i in range(len(ing_list)):
 # crescent
 # cake/muffin/brownie
 # hass
+# slaw
+# curds
+# lawry
+# coarsley
+# verts
+# spun
+# piecrusts
+# pace
+# wraps
+# hines
+# scapes
+# blackstrap
+# smokies
+# oise
+# tawny
+# concord
+# whiz
 
 # To add
 # savory
 
-### Pause at tots
+### Pause at doritos
