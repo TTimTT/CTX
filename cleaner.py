@@ -9,7 +9,7 @@ import os
 ing_list = pd.read_csv('ing_list.csv')
 
 cleaned_list = list()
-for i in range(1051,len(ing_list)):
+for i in range(1139,len(ing_list)):
     print('############################################')
     print('\033[1m' + ing_list.iloc[i,1], '\033[0m\n')
     os.system('grep -m1 --color " '+ing_list.iloc[i,1]+' " ./data/allrecipes_desc.csv ')
@@ -59,8 +59,11 @@ for i in range(1051,len(ing_list)):
 # tawny
 # concord
 # whiz
+# silks
+# macintosh
+# claussen
 
 # To add
 # savory
 
-### Pause at doritos
+### Pause at grands
