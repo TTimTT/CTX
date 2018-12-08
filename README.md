@@ -50,12 +50,12 @@ retrieve ratings but we have the cooking time!
 
 # A list of internal milestones up until project milestone 3
 Objectives:
-- Create our own JSON map to plot informations about the recipes by region more specifically
-- Make the map more interactive and correct the colormap issue
-- Use statistical properties of the English language or Levenshtein distance
-- Finish the ingredients list cleaning and do classification
-- Find equivalent recipes with low calories
-- Create a user friendly recipe finder 
+- [X]Create our own JSON map to plot informations about the recipes by region more specifically
+- [Pending]Make the map more interactive and correct the colormap issue
+- [X]Use statistical properties of the English language or Levenshtein distance
+- [80%]Finish the ingredients list cleaning and do classification
+- [Pending]Find equivalent recipes with low calories
+- [Pending]Create a user friendly recipe finder 
 
 Bonus:
 - Try to compute missing nutritional informations
