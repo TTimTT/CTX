@@ -36,8 +36,8 @@ h6 {
     font-weight: 700;
 }
 
-hr.star-light,
-hr.star-primary {
+hr.star-title,
+hr.star-about {
     margin: 25px auto 30px;
     padding: 0;
     max-width: 250px;
@@ -47,8 +47,8 @@ hr.star-primary {
     overflow: visible;
 }
 
-hr.star-light:after,
-hr.star-primary:after {
+hr.star-title:after,
+hr.star-about:after {
     content: "\f005";
     display: inline-block;
     position: relative;
@@ -58,31 +58,36 @@ hr.star-primary:after {
     font-size: 2em;
 }
 
-hr.star-light {
-    border-color: #fff;
-}
-
-hr.star-light:after {
-    color: #fff;
-    background-color: #{{ site.color.primary }};
-}
-
-hr.star-primary {
+hr.star-title {
     border-color: #{{ site.color.secondary }};
 }
 
-hr.star-primary:after {
+hr.star-title:after {
     color: #{{ site.color.secondary }};
-    background-color: #fff;
+    background-color: #{{ site.color.primary }};
+}
+
+hr.star-about {
+    border-color: #{{ site.color.secondary }}
+}
+
+hr.star-about:after {
+    color: #{{ site.color.secondary }};
+    background-color: #{{ site.color.secondary-light }};
 }
 
 .img-centered {
     margin: 0 auto;
 }
 
+.img-title {
+    max-width: 400px;
+    height: auto;
+}
+
 header {
     text-align: center;
-    color: #fff;
+    color: #{{ site.color.secondary }};
     background: #{{ site.color.primary }};
 }
 
@@ -104,7 +109,7 @@ header .intro-text .name {
     font-weight: 700;
 }
 
-header .intro-text .skills {
+header .intro-text .keywords {
     font-size: 1.25em;
     font-weight: 300;
 }
@@ -181,7 +186,12 @@ section h2 {
 }
 
 section.success {
-    color: #fff;
+    color: #{{ site.color.secondary }};
+    background: #{{ site.color.secondary-light }};
+}
+
+section.success-2 {
+    color: #{{ site.color.secondary }};
     background: #{{ site.color.primary }};
 }
 
@@ -230,7 +240,7 @@ section.success {
     margin-top: -12px;
     text-align: center;
     font-size: 20px;
-    color: #fff;
+    color: #{{ site.color.secondary-light }};
 }
 
 #portfolio .portfolio-item .portfolio-link .caption .caption-content i {
@@ -265,7 +275,7 @@ section.success {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-    border: solid 2px #fff;
+    border: solid 2px #000;
     color: #{{ site.color.primary }};
     background: #fff;
 }
@@ -327,7 +337,7 @@ form .row:first-child .floating-label-form-group {
 }
 
 footer {
-    color: #fff;
+    color: #{{ site.color.primary }};
 }
 
 footer h3 {

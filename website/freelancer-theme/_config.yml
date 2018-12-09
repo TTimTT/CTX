@@ -1,10 +1,10 @@
 # Site settings
-title: Freelancer
+title: Captain Cook
 email: your-email@domain.com
 url: https://example.github.io
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-keywords: "your keywords, separated by commas"
-skills: "Web Developer - Graphic Artist - User Experience Designer"
+keywords: "Cooking, Recipes"
+# skills: "Web Developer - Graphic Artist - User Experience Designer"
 meta_author: LastName FirstName
 
 # Google webmaster tools
@@ -25,14 +25,14 @@ disqus_shortname: myshortname
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: 4477aa #18bc9c #80B3FF
+  primary: FFEFD5 #papaya
   primary-rgb: "24,288,156" #"128,179,255"
-  secondary: 2c3e50 #FD6E8A
-  secondary-dark: 233140 #A2122F
-
+  secondary: FF7F50 #coral
+  secondary-dark: FFEFD0 #papaya
+  secondary-light: FFFFFF #white
 # Footer settings
 footer:
-  copyright: Dr. Henry Jekyll
+  copyright: ADA
   location: Location
   social: Around the Web
   credits: Credits
@@ -56,7 +56,7 @@ address:
   - line: Beverly Hills, CA 90210
 
 # Credits content
-credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
+credits: 'This page was created as a project for the course ADA in EPFL <a href="http://https://dlab.epfl.ch/teaching/fall2018/cs401/">ADA ClassRoom</a>.'
 
 # Build settings
 markdown: kramdown
