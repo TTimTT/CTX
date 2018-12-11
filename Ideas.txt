@@ -1,0 +1,8 @@
+Ideas for the website:
+
+- Modal:
+	1. Screenshot of one of the html original pages
+	2. Ingredients graph (holoviews network graph ?)
+	3. Cooking time on map 
+	4. Nutritional values on map
+	5. Nutritional values (statistical boxplot)
