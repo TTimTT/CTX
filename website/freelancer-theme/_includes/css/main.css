@@ -114,6 +114,8 @@ header .intro-text .keywords {
     font-weight: 300;
 }
 
+
+
 @media(min-width:768px) {
     header .container {
         padding-top: 200px;
@@ -190,6 +192,19 @@ section.success {
     background: #{{ site.color.secondary-light }};
 }
 
+.html-img-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.html-img {
+    height: 1000px;
+    width: 1000px;
+}
+
 section.success-2 {
     color: #{{ site.color.secondary }};
     background: #{{ site.color.primary }};
@@ -229,7 +244,7 @@ section.success-2 {
 }
 
 #portfolio .portfolio-item .portfolio-link .caption:hover {
-    opacity: 1;
+    opacity: 0.9;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption .caption-content {

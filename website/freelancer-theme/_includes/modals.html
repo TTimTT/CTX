@@ -10,11 +10,15 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-lg-10 col-lg-offset-1">
                         <div class="modal-body">
                             <h2>{{ post.title }}</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                            <div class="html-img-container">
+                                <div class="html-img">
+                                    <object type="text/html" width="100%" height="100%" scrolling="no" data="img/portfolio/out.html"></object>
+                                </div>
+                            </div>
                             {% if post.description %}
                                 <p>{{ post.description }}</p>
                             {% endif %}
