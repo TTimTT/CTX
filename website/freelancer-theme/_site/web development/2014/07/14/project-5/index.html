@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="/css/w3.css">
     <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -78,9 +79,9 @@
                 <div class="col-lg-12">
                     <div class="intro-text">
                         <span class="name">Captain Cook</span>
-                        <hr class="star-title">
+                        <hr class="star-1">
                         <img class="img-title" src="img/cake.png" alt="">
-                        <hr class="star-title">
+                        <hr class="star-1">
                         <span class="keywords">Cooking, Recipes</span>
                     </div>
                 </div>
@@ -93,7 +94,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>About our project</h2>
-                    <hr class="star-about">
+                    <hr class="star-2">
                 </div>
             </div>
             <div class="container-fluid">
@@ -112,6 +113,99 @@
         </div>
     </section>
 
+    <!-- ingredients flags Section -->
+<style>
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+</style>
+
+    <section class="success-2" id="recipes_infos">
+        <div class="w3-container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Recipes Informations</h2>
+                    <hr class="star-1">
+                </div>
+            </div>
+            
+
+            <style>
+            .mySlides {display:none;}
+            </style>
+
+            <div class="w3-content w3-display-container">
+                <img class="mySlides center" src="img/Flags/us_ing.svg" style="width:50%">
+                <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+                    USA
+                </div>
+                <img class="mySlides center" src="img/Flags/italian_ing.svg" style="width:50%">
+                <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+                    Italy
+                </div>
+                <img class="mySlides center" src="img/Flags/mexican_ing.svg" style="width:50%">
+                <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+                    Mexico
+                </div>
+                <img class="mySlides center" src="img/Flags/canadian_ing.svg" style="width:50%">
+                <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+                    Canada
+                </div>
+                <img class="mySlides center" src="img/Flags/indian_ing.svg" style="width:50%">
+                
+                
+                <div class="w3-center w3-container w3-section w3-large w3-text-black w3-display-bottommiddle" style="width:50%">
+                <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(1)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(2)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(3)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(4)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(5)"></span>
+                </div>  
+
+            </div>
+
+
+
+    </div>
+</section>
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-black", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-black";
+}
+</script>
     
     <!-- Portfolio Grid Section -->
     <section class="success-2" id="portfolio">
@@ -128,7 +222,7 @@
                         <a href="#portfolioModal-1" class="portfolio-link" data-toggle="modal">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <i class="fa fa-search-plus fa-3x"></i>
+                                    <div class="overlay">My Name is John</div>
                                 </div>
                             </div>
                             <img src="img/portfolio/cabin.png" class="img-responsive" alt="image-alt">
@@ -139,7 +233,7 @@
                         <a href="#portfolioModal-1" class="portfolio-link" data-toggle="modal">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <i class="fa fa-search-plus fa-3x"></i>
+                                    <div class="overlay">My Name is John</div>
                                 </div>
                             </div>
                             <img src="img/portfolio/cabin.png" class="img-responsive" alt="image-alt">
@@ -150,7 +244,7 @@
                         <a href="#portfolioModal-2" class="portfolio-link" data-toggle="modal">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <i class="fa fa-search-plus fa-3x"></i>
+                                    <div class="overlay">My Name is John</div>
                                 </div>
                             </div>
                             <img src="img/portfolio/cake.png" class="img-responsive" alt="image-alt">
@@ -161,7 +255,7 @@
                         <a href="#portfolioModal-3" class="portfolio-link" data-toggle="modal">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <i class="fa fa-search-plus fa-3x"></i>
+                                    <div class="overlay">My Name is John</div>
                                 </div>
                             </div>
                             <img src="img/portfolio/circus.png" class="img-responsive" alt="image-alt">
@@ -172,7 +266,7 @@
                         <a href="#portfolioModal-4" class="portfolio-link" data-toggle="modal">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <i class="fa fa-search-plus fa-3x"></i>
+                                    <div class="overlay">My Name is John</div>
                                 </div>
                             </div>
                             <img src="img/portfolio/game.png" class="img-responsive" alt="image-alt">
@@ -183,7 +277,7 @@
                         <a href="#portfolioModal-6" class="portfolio-link" data-toggle="modal">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <i class="fa fa-search-plus fa-3x"></i>
+                                    <div class="overlay">My Name is John</div>
                                 </div>
                             </div>
                             <img src="img/portfolio/submarine.png" class="img-responsive" alt="image-alt">
@@ -194,7 +288,7 @@
                         <a href="#portfolioModal-5" class="portfolio-link" data-toggle="modal">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <i class="fa fa-search-plus fa-3x"></i>
+                                    <div class="overlay">My Name is John</div>
                                 </div>
                             </div>
                             <img src="img/portfolio/safe.png" class="img-responsive" alt="image-alt">
@@ -339,7 +433,7 @@
                     <div class="col-lg-10 col-lg-offset-1">
                         <div class="modal-body">
                             <h2>Project 7</h2>
-                            <hr class="star-primary">
+                            <hr class="star-1">
                             <div class="html-img-container">
                                 <div class="html-img">
                                     <object type="text/html" width="100%" height="100%" scrolling="no" data="img/portfolio/out.html"></object>
@@ -384,7 +478,7 @@
                     <div class="col-lg-10 col-lg-offset-1">
                         <div class="modal-body">
                             <h2>Project 1</h2>
-                            <hr class="star-primary">
+                            <hr class="star-1">
                             <div class="html-img-container">
                                 <div class="html-img">
                                     <object type="text/html" width="100%" height="100%" scrolling="no" data="img/portfolio/out.html"></object>
@@ -429,7 +523,7 @@
                     <div class="col-lg-10 col-lg-offset-1">
                         <div class="modal-body">
                             <h2>Project 2</h2>
-                            <hr class="star-primary">
+                            <hr class="star-1">
                             <div class="html-img-container">
                                 <div class="html-img">
                                     <object type="text/html" width="100%" height="100%" scrolling="no" data="img/portfolio/out.html"></object>
@@ -479,7 +573,7 @@
                     <div class="col-lg-10 col-lg-offset-1">
                         <div class="modal-body">
                             <h2>Project 3</h2>
-                            <hr class="star-primary">
+                            <hr class="star-1">
                             <div class="html-img-container">
                                 <div class="html-img">
                                     <object type="text/html" width="100%" height="100%" scrolling="no" data="img/portfolio/out.html"></object>
@@ -529,7 +623,7 @@
                     <div class="col-lg-10 col-lg-offset-1">
                         <div class="modal-body">
                             <h2>Project 4</h2>
-                            <hr class="star-primary">
+                            <hr class="star-1">
                             <div class="html-img-container">
                                 <div class="html-img">
                                     <object type="text/html" width="100%" height="100%" scrolling="no" data="img/portfolio/out.html"></object>
@@ -579,7 +673,7 @@
                     <div class="col-lg-10 col-lg-offset-1">
                         <div class="modal-body">
                             <h2>Project 6</h2>
-                            <hr class="star-primary">
+                            <hr class="star-1">
                             <div class="html-img-container">
                                 <div class="html-img">
                                     <object type="text/html" width="100%" height="100%" scrolling="no" data="img/portfolio/out.html"></object>
@@ -629,7 +723,7 @@
                     <div class="col-lg-10 col-lg-offset-1">
                         <div class="modal-body">
                             <h2>Project 5</h2>
-                            <hr class="star-primary">
+                            <hr class="star-1">
                             <div class="html-img-container">
                                 <div class="html-img">
                                     <object type="text/html" width="100%" height="100%" scrolling="no" data="img/portfolio/out.html"></object>
