@@ -96,7 +96,7 @@
                 <div class="col-md-5 col-md-offset-1">
                     <p>Captain Cook is a project developed by an EPFL team to analyse a recipes database and visualise the informations in a cool way.</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-5">
                     <p>Here you can see the results of the project! Enjoy! </p>
                 </div>
             </div>            
@@ -110,16 +110,53 @@
 
     <!-- ingredients flags Section -->
 <style>
-.mySlides {display:none}
-.w3-left, .w3-right, .w3-badge {cursor:pointer}
-.w3-badge {height:13px;width:13px;padding:0}
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+
+
+.html-img {
+    position: relative;
+    height: 700px;
+    width: 700px;
 }
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.text {
+  color: white;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  background-image: black;
+}
+.double-container {
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+a.link{
+    color: blue;
+}
+ul {
+    font-size: 16px;
+}
+h3 {
+    font-weight: bold;
+}
+
 </style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <section class="success" id="data_infos">
         <div class="w3-container">
@@ -131,110 +168,326 @@
             </div>
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 text-center">
-                    <p>The DataSet was constituted of 15894 recipes coming from different websites. </p>
+                    <p>The DataSet was constituted of 47000 recipes coming from different websites. </p>
                     <p>Because of this, it was important to clean the Data before using it. </p>
                 </div>
             </div>
-            <div class="w3-container">
-                <img class="center" src="img/recipe_count_per_region.png" style="width:100%">
-            </div>
 
-            <div class="w3-container">
-                <img class="center" src="img/Flags/titles_wordcloud.svg" style="width:80%">
-            </div>
+<hr class="star-2">
 
-            <style>
-            .mySlides {display:none;}
-            </style>
-
-            <div class="w3-content w3-display-container">
-
-                <div class="w3-display-container mySlides">
-                    <img class="center" src="img/Flags/us_ing.svg" style="width:50%">
-                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                    US recipes
+            <div class="container-fluid double-container">
+                <div class="col-md-5 col-lg-offset-1 slideshow-container" id="div1">
+                    <div class="mySlides">
+                        <img class="center" src="img/screenshots/allrecipes_clean.png" style="width:100%">
+                        <div class="w3-display-bottommiddle w3-large w3-container w3-padding-16 w3-black">All Recipes</div>  
                     </div>
-                </div>
 
-                <div class="w3-display-container mySlides">
-                    <img class="center" src="img/Flags/italian_ing.svg" style="width:50%">
-                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                    Italian recipes
+                    <div class="mySlides">
+                        <img class="center" src="img/screenshots/eatingwell_clean.png" style="width:100%">
+                        <div class="w3-display-bottommiddle w3-large w3-container w3-padding-16 w3-black">Eating Well</div>  
                     </div>
-                </div>
 
-                <div class="w3-display-container mySlides">
-                    <img class="center" src="img/Flags/mexican_ing.svg" style="width:50%">
-                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                    Mexican recipes
+                    <div class="mySlides">
+                        <img class="center" src="img/screenshots/yummly_clean.png" style="width:100%">
+                        <div class="w3-display-bottommiddle w3-large w3-container w3-padding-16 w3-black">Yummly</div>  
                     </div>
-                </div>
 
-                <div class="w3-display-container mySlides">
-                    <img class="center" src="img/Flags/canadian_ing.svg" style="width:50%">
-                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                    Canadian recipes
-                    </div>
+                  <div class="w3-center w3-container w3-section w3-large w3-text-black w3-display-bottommiddle" style="width:50%">
+                    <a class="w3-btn-floating w3-display-bottomleft" onclick="plusDivs(this, -1)">&#10094;</a>
+                    <a class="w3-btn-floating w3-display-bottomright" onclick="plusDivs(this, 1)">&#10095;</a>
+                  </div>
                 </div>
-
-                <div class="w3-display-container mySlides">
-                    <img class="center" src="img/Flags/indian_ing.svg" style="width:50%">
-                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                    Indian recipes
-                    </div>
-                </div>
-                    
                 
-                <div class="w3-center w3-container w3-section w3-large w3-text-black w3-display-bottommiddle" style="width:50%">
-                <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-                <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-                <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(1)"></span>
-                <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(2)"></span>
-                <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(3)"></span>
-                <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(4)"></span>
-                <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(5)"></span>
-                </div>  
-
+                <div class="col-md-5">
+                    <h3>Websites</h3>
+                    <p>The recipes were found on websites like <a class="link" href="https://www.allrecipes.com" target="_blank">All Recipes</a>, <a class="link" href="https://www.eatingwell.com" target="_blank">Eating Well</a> or <a class="link" href="https://www.yummly.com" target="_blank">Yummly</a>. </p>
+                    <p>This meant we had lots of recipes, but as every website is different, we needed to clean the recipes to have a coherent structure for all recipes.</p>
+                    <p>We chose to keep the following informations: 
+                        <ul>
+                            <li>the title of the recipe,</li>
+                            <li>the country\region it originated from (if given),</li>
+                            <li>the ingredients present in the description,</li>
+                            <li>the informations about the nutritional values.</li>
+                        </ul>
+                    </p>
+                    <p>In the end, we have a total of 47000 recipes to analyse.</p>
+                </div>
             </div>
 
-    </div>
+<hr class="star-2">
 
-    <div class="html-img-container center">
-        <div class="html-img">
-            <object type="text/html" data="img/ingredients_chord.html" width="100%" height="100%" scrolling="no"></object>
+            <div class="container-fluid double-container">
+                <div class="col-md-5 ">
+                    <h3>Which are the regions with most recipes?</h3>
+                    <p>One of the first things we are interested in is discovering which regions have the most recipes published.</p>
+                    <p>Unfortunately, most recipes were not labelized. The 15700 labelized recipes came from 36 different regions, which is still quite a lot: we could eat only italian plates for dinner every day for almost 7 years!</p>
+                    <p>On the side, you can see the percentages of the recipes per region in a chart (a PIE chart... get it?). It is clear that the community with most recipes is the US, which is mainly due to the fact that the websites we scraped are all anglophones.</p>
+                    <p>At the second place come Italian recipes, followed closely by the mexican. The first 10 regions make for the 45% of all recipes!</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="center" src="img/recipe_count_per_region.svg" style="width:100%">
+                </div>
+                
+            </div>
+            
+<hr class="star-2">
+
+            <div class="container-fluid double-container">
+                <div class="col-lg-5">
+                    <img class="center" src="img/Flags/titles_wordcloud.svg" style="width:100%">
+                </div>
+                <div class="col-lg-5 col-lg-offset-1">
+                    <h3>What does the title say?</h3>
+                    <p> What are the words people use the most when writing the title for their recipes?</p>
+                    <p>Titles need to be catchy to interest people: apparently, most users really like chicken! We can also see that one of the words that people use the most is 'easy': people want recipes that are easy and fast to make, like salads or soups. A lot of recipes are about sweets: cookies, cake and pie seem to enjoy a lot of attention. </p>
+                </div>
+            </div>
+
+<hr class="star-2">
+
+            <div class="container-fluid double-container">
+                <div class="col-lg-5 col-lg-offset-1">
+                    <h3>Most used ingredients per region?</h3>
+                    <p>Obviously all around the world people are crazy about salt and pepper! But not in the same proportions. In average, 10% of recipes contains salt, the Belgian recipes are the saltiest whereas the Asian recipes are the least with only 3% of occurences. Countries are defined by their culture and recipes, try to identify them by their recipes' ingredients!</p>
+                </div>
+                <div class="col-lg-5 slideshow-container" id="div2" >
+                    <div class="mySlides">
+                        <img class="center" src="img/Flags/us_ing.svg" style="width:100%">
+                        <div class="w3-display-bottommiddle w3-large w3-container w3-padding-16 w3-black">US Recipes</div>  
+                    </div>
+
+                    <div class="mySlides">
+                        <img class="center" src="img/Flags/italian_ing.svg" style="width:100%">
+                        <div class="w3-display-bottommiddle w3-large w3-container w3-padding-16 w3-black">Italian Recipes</div>  
+                    </div>
+
+                    <div class="mySlides">
+                        <img class="center" src="img/Flags/mexican_ing.svg" style="width:100%">
+                        <div class="w3-display-bottommiddle w3-large w3-container w3-padding-16 w3-black">Mexican Recipes</div>  
+                    </div>
+
+                    <div class="mySlides">
+                        <img class="center" src="img/Flags/canadian_ing.svg" style="width:100%">
+                        <div class="w3-display-bottommiddle w3-large w3-container w3-padding-16 w3-black">Canadian Recipes</div>  
+                    </div>
+
+                    <div class="mySlides">
+                        <img class="center" src="img/Flags/indian_ing.svg" style="width:100%">
+                        <div class="w3-display-bottommiddle w3-large w3-container w3-padding-16 w3-black">Indian Recipes</div>  
+                    </div>
+
+                    <div class="w3-center w3-container w3-section w3-large w3-text-black w3-display-bottommiddle" style="width:50%">
+                        <a class="w3-btn-floating w3-display-bottomleft" onclick="plusDivs(this, -1)">&#10094;</a>
+                        <a class="w3-btn-floating w3-display-bottomright" onclick="plusDivs(this, 1)">&#10095;</a>
+                  </div>
+                </div>
+                
+            </div>
+
+<hr class="star-2">
+
+            <div class="container-fluid double-container">
+                <div class="col-md-5 html-img-container">
+                    <div class="html-img">
+                            <object type="text/html" data="img/ingredients_chord.html" width="100%" height="100%" scrolling="no"></object>
+                        </div>
+                    </div>
+
+                <div class="col-lg-5 col-lg-offset-1">
+                    <h3>Any exotic meals you should try?</h3>
+                    <p>Are you willing to try something exotic? Just look at this chord diagram, it will help you find which regions have the more similarities yet with some differences as you have seen right before. </p>
+                </div>
+            </div>
+
+<hr class="star-2">
+
+            <div class="container-fluid double-container">
+                <div class="col-md-5 col-md-offset-1">
+                    <h3>Do you have time for cooking?</h3>
+                    <p>Now that you know what you are looking for, it might be useful to see if you have the time for it... By looking at the map we see a lot of disparity in the average cooking time. But don't be fooled by junk food! </p>
+                </div>
+
+                <div class="col-md-5 col-lg-offset-1" style="max-height: 500px">
+                    <div class="html-img">
+                            <object type="text/html" data="img/map_info.html"  width="100%" height="70%" scrolling="no"></object>
+                    </div>
+                </div>
+            </div>
+
+<hr class="star-2">
+
+            <div class="container-fluid double-container">
+                    <div class="col-md-5 col-lg-offset-1" style="max-height: 500px">
+                        <div class="myBtnContainer">
+                            <div id="myBtnContainer">
+                                <button class="btn" onclick="filterSelection('carb')"> carb</button>
+                                <button class="btn" onclick="filterSelection('cholesterol')"> cholesterol</button>
+                                <button class="btn" onclick="filterSelection('fat')"> fat</button>
+                                <button class="btn" onclick="filterSelection('kcal')"> kcal</button>
+                                <button class="btn" onclick="filterSelection('protein')"> protein</button>
+                                <button class="btn" onclick="filterSelection('sodium')"> sodium</button>
+                            </div>
+                        </div>
+                    <div class="html-img">
+                        <div class="filterDiv carb">
+                            <img class="center" src="img/boxplots/carb.svg" style="width:80%">
+                        </div>
+                    <div class="filterDiv cholesterol">
+                        <img class="center" src="img/boxplots/cholesterol.svg" style="width:80%">
+                    </div>
+                    <div class="filterDiv fat">
+                        <img class="center" src="img/boxplots/fat.svg" style="width:80%">
+                    </div>
+                    <div class="filterDiv kcal">
+                        <img class="center" src="img/boxplots/kcal.svg" style="width:80%">
+                    </div>
+                    <div class="filterDiv protein">
+                        <img class="center" src="img/boxplots/protein.svg" style="width:80%">
+                    </div>
+                    <div class="filterDiv sodium">
+                        <img class="center" src="img/boxplots/sodium.svg" style="width:80%">
+                    </div>
+                </div>
+            </div>
+                <div class="col-md-5">
+                    <h3>Looking for something healthy?</h3>
+                    <p>Maybe it is time to avoid fast-food and discover which regions offers the best recipes for your health. Korean recipes seems appropriate for low-carbohydrates diet but beware of their sodium level, they are the worst! Maybe you should go for a Japanese recipe, it seems healthier but if you don't like asian food, you should try Mediteranean or Scandinavian recipes. </p>
+                </div>
+
         </div>
     </div>
 </section>
 
+<script>
+var sliderObjects = [];
+createSliderObjects();
+
+function plusDivs(obj, n) {
+  var parentDiv = $(obj).parent().parent();
+  var matchedDiv;
+  $.each(sliderObjects, function(i, item) {
+    if ($(parentDiv[0]).attr('id') == $(item).attr('id')) {
+      matchedDiv = item;
+      return false;
+    }
+  });
+  matchedDiv.slideIndex=matchedDiv.slideIndex+n;
+  showDivs(matchedDiv, matchedDiv.slideIndex);
+}
+
+function createSliderObjects() {
+  var sliderDivs = $('.slideshow-container');
+  $.each(sliderDivs, function(i, item) {
+    var obj = {};
+    obj.id = $(item).attr('id');
+    obj.divContent = item;
+    obj.slideIndex = 1;
+    obj.slideContents = $(item).find('.mySlides');
+    showDivs(obj, 1);
+    sliderObjects.push(obj);
+  });
+}
+
+function showDivs(divObject, n) {
+  debugger;
+  var i;
+  if (n > divObject.slideContents.length) {
+    divObject.slideIndex = 1
+  }
+  if (n < 1) {
+    divObject.slideIndex = divObject.slideContents.length
+  }
+  for (i = 0; i < divObject.slideContents.length; i++) {
+    divObject.slideContents[i].style.display = "none";
+  }
+  divObject.slideContents[divObject.slideIndex - 1].style.display = "block";
+}
+
+</script>
+
+<!-- BOXPLOTS -->
+
+<style>
+.filterDiv {
+  position: relative;
+  color: #ffffff;
+  width: 1000px;
+  margin: 10px;
+  display: none;
+  right: 47%;
+}
+.myBtnContainer {
+    /*padding: 25% 0 0 21%;*/
+}
+
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+
 
 <script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
+filterSelection("carb")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
   for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
   }
-  for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" w3-black", "");
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
   }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-black";
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
 }
 </script>
+
 
 
         <!-- Footer -->
@@ -242,43 +495,7 @@ function showDivs(n) {
         <div class="footer-above">
             <div class="container">
                 <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>
-                            
-                                3481 Melrose Place <br>
-		                    
-                                Beverly Hills, CA 90210 <br>
-		                    
-                        </p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
-                        <ul class="list-inline">
-                            
-                            <li>
-                                <a href="http://twitter.com/jekyllrb" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-		                    
-                            <li>
-                                <a href="" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-		                    
-                            <li>
-                                <a href="http://stackoverflow.com/questions/tagged/jekyll" class="btn-social btn-outline"><i class="fa fa-fw fa-stack-overflow"></i></a>
-                            </li>
-		                    
-                            <li>
-                                <a href="http://bitbucket.org/jekyll" class="btn-social btn-outline"><i class="fa fa-fw fa-bitbucket"></i></a>
-                            </li>
-		                    
-                            <li>
-                                <a href="http://github.com/jekyll" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
-                            </li>
-		                    
-                        </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
+                    <div class="footer-col col-md-0">
                         <h3>Credits</h3>
                         <p>This page was created as a project for the course ADA in EPFL <a href="http://https://dlab.epfl.ch/teaching/fall2018/cs401/">ADA ClassRoom</a>.</p>
                     </div>

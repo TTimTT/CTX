@@ -481,8 +481,9 @@ footer .footer-below {
     transform: rotate(90deg);
 }
 
-.navbar-nav>.active>a {
-    background-color: #{{ site.color.secondary-dark }} !important;
+.navbar-nav>.active>a { /* HERE TODO */
+    background-color: #BC4D5D !important;/*#{{ site.color.secondary-dark }} !important;*/
+
 }
 
 /* Fix modal mouse wheel issues */

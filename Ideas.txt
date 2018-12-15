@@ -1,8 +1,32 @@
 Ideas for the website:
 
 - Modal:
-	1. Screenshot of one of the html original pages
+	1. Screenshot of one of the html original pages[X]
 	2. Ingredients graph (holoviews network graph ?)
 	3. Cooking time on map 
 	4. Nutritional values on map
 	5. Nutritional values (statistical boxplot)
+
+
+Analysis:
+[1]    Ingredient occurences distribution -> Word Cloud [X]
+[2]    Link between regions -> Network on map?/ chord diagram: Taking for each countries the 50 most frequent ingredient and compare between each countries -> get the correlation if two ingredients exists in both, then it adds a weight of one [Pending]
+[3]    Cooking Time -> Map of the world
+[4]    Nutrition -> Get output to HTML and/or Map | try to link boxplot and map?
+
+
+Website structure:
+- Project description ( blabla + sample image of website)
+- Analysis [ 2 3 1]
+
+
+
+TODO: 
+- Description of the project for the website ( what is the goal? etc...)
+- Boxplot [X]
+- Bonus: Wordcloud with interactiveness
+- Pie chart -> Cakefying
+- Map???
+- Cooking time -> Map??
+- Substition ingredient??
+

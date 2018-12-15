@@ -40,6 +40,9 @@ a.link{
 ul {
     font-size: 16px;
 }
+h3 {
+    font-weight: bold;
+}
 
 </style>
 
@@ -112,7 +115,7 @@ ul {
                     <p>At the second place come Italian recipes, followed closely by the mexican. The first 10 regions make for the 45% of all recipes!</p>
                 </div>
                 <div class="col-md-5">
-                    <img class="center" src="img/recipe_count_per_region.png" style="width:100%">
+                    <img class="center" src="img/recipe_count_per_region.svg" style="width:100%">
                 </div>
                 
             </div>
@@ -135,7 +138,7 @@ ul {
             <div class="container-fluid double-container">
                 <div class="col-lg-5 col-lg-offset-1">
                     <h3>Most used ingredients per region?</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.</p>
+                    <p>Obviously all around the world people are crazy about salt and pepper! But not in the same proportions. In average, 10% of recipes contains salt, the Belgian recipes are the saltiest whereas the Asian recipes are the least with only 3% of occurences. Countries are defined by their culture and recipes, try to identify them by their recipes' ingredients!</p>
                 </div>
                 <div class="col-lg-5 slideshow-container" id="div2" >
                     <div class="mySlides">
@@ -181,19 +184,30 @@ ul {
                     </div>
 
                 <div class="col-lg-5 col-lg-offset-1">
-                    <h3>Title</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.</p>
+                    <h3>Any exotic meals you should try?</h3>
+                    <p>Are you willing to try something exotic? Just look at this chord diagram, it will help you find which regions have the more similarities yet with some differences as you have seen right before. </p>
                 </div>
             </div>
 
 <hr class="star-2">
 
             <div class="container-fluid double-container">
-                <div class="col-md-5">
-                    <h3>Title</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.</p>
+                <div class="col-md-5 col-md-offset-1">
+                    <h3>Do you have time for cooking?</h3>
+                    <p>Now that you know what you are looking for, it might be useful to see if you have the time for it... By looking at the map we see a lot of disparity in the average cooking time. But don't be fooled by junk food! </p>
                 </div>
-                    <div class="col-md-5" style="max-height: 500px">
+
+                <div class="col-md-5 col-lg-offset-1" style="max-height: 500px">
+                    <div class="html-img">
+                            <object type="text/html" data="img/map_info.html"  width="100%" height="70%" scrolling="no"></object>
+                    </div>
+                </div>
+            </div>
+
+<hr class="star-2">
+
+            <div class="container-fluid double-container">
+                    <div class="col-md-5 col-lg-offset-1" style="max-height: 500px">
                         <div class="myBtnContainer">
                             <div id="myBtnContainer">
                                 <button class="btn" onclick="filterSelection('carb')"> carb</button>
@@ -225,6 +239,11 @@ ul {
                     </div>
                 </div>
             </div>
+                <div class="col-md-5">
+                    <h3>Looking for something healthy?</h3>
+                    <p>Maybe it is time to avoid fast-food and discover which regions offers the best recipes for your health. Korean recipes seems appropriate for low-carbohydrates diet but beware of their sodium level, they are the worst! Maybe you should go for a Japanese recipe, it seems healthier but if you don't like asian food, you should try Mediteranean or Scandinavian recipes. </p>
+                </div>
+
         </div>
     </div>
 </section>
@@ -280,12 +299,12 @@ function showDivs(divObject, n) {
 
 <style>
 .filterDiv {
-  float: left;
+  position: relative;
   color: #ffffff;
   width: 1000px;
-  margin: 2px;
+  margin: 10px;
   display: none;
-  padding: 0 35% 0 0;
+  right: 47%;
 }
 .myBtnContainer {
     /*padding: 25% 0 0 21%;*/

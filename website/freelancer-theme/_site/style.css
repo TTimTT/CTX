@@ -199,19 +199,6 @@ section.success {
     background: #FFFFFF;
 }
 
-.html-img-container {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.html-img {
-    height: 1000px;
-    width: 1000px;
-}
-
 section.success-2 {
     color: #FF7F50;
     background: #FFEFD5;
@@ -501,8 +488,9 @@ footer .footer-below {
     transform: rotate(90deg);
 }
 
-.navbar-nav>.active>a {
-    background-color: #FFEFD0 !important;
+.navbar-nav>.active>a { /* HERE TODO */
+    background-color: #BC4D5D !important;/*#FFEFD0 !important;*/
+
 }
 
 /* Fix modal mouse wheel issues */
@@ -510,6 +498,18 @@ footer .footer-below {
 .modal.fade.in {
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
+}
+
+.mySlides {
+    display:none
+}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
  
