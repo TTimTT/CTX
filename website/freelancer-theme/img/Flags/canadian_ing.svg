@@ -10,9 +10,9 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   height="362.91428pt"
+   height="478.5pt"
    version="1.1"
-   viewBox="0 0 558 362.91428"
+   viewBox="0 0 558 478.50001"
    width="558pt"
    id="svg19"
    sodipodi:docname="canadian_ing.svg"
@@ -38,7 +38,7 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
+     inkscape:window-width="960"
      inkscape:window-height="1016"
      id="namedview21"
      showgrid="false"
@@ -46,12 +46,12 @@
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     inkscape:zoom="1.0585695"
-     inkscape:cx="294.50309"
-     inkscape:cy="268.01991"
-     inkscape:window-x="0"
+     inkscape:zoom="0.45554873"
+     inkscape:cx="386.84335"
+     inkscape:cy="169.63057"
+     inkscape:window-x="960"
      inkscape:window-y="27"
-     inkscape:window-maximized="1"
+     inkscape:window-maximized="0"
      inkscape:current-layer="svg19" />
   <defs
      id="defs4"
@@ -65,7 +65,7 @@
   <g
      style="stroke-linecap:butt;stroke-linejoin:round"
      id="axes_1"
-     transform="translate(-90,-206.74286)">
+     transform="translate(-90,-91.157139)">
     <g
        style="stroke-linecap:butt;stroke-linejoin:round"
        id="g10"
