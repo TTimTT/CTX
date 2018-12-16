@@ -39,14 +39,13 @@ tags
 - Get the distribution of most used ingredients
 - Finding equivalent recipes with less calories
 
-# List of internal milestones achieved/missing for milestone 3
+# List of internal milestones achieved for milestone 3
 - Loading HTML was done with ```PERL``` and ```BASH``` scripts
 - Data was cleaned with BASH and then with Pandas since it was small enough, we didn't
 retrieve ratings but we have the cooking time!
 - We classified the recipes by nutritional, time or region. We just need to do it by ingredient
-- Ingredients are identified but we need a final cleaning step. Substition will be done before milestone 3.
+- Ingredients are identified and cleaned
 - The distribution of ingredients is done
-- We don't have yet the equivalent recipes with less calories
 - Create our own JSON map to plot informations about the recipes by region more specifically
 - Make the map more interactive and correct the colormap issue
 - Use statistical properties of the English language or Levenshtein distance
